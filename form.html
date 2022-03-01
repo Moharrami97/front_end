@@ -7,7 +7,7 @@
         <form style="width: 50%; margin: 0 auto;">
             <fieldset>
                 <legend>ثبت نام</legend>
-                <table border="1" style="width: 100%;">
+                <table style="width: 100%;">
                     <tr>
                         <td style="width: 30%;text-align: left;"><label for="name">نام :</label></td>
                         <td style="width: 70%;"><input type="text" id="name"></td>
@@ -46,7 +46,7 @@
                         <td><input type="email" id="email" name="email"></td>
                     </tr>
                     <tr>
-                        <td><label for="ostanha">استان :</label></td>
+                        <td style="text-align: left;"><label for="ostanha">استان :</label></td>
                         <td>
                             <input list="ostan" id="ostanha" placeholder="استان خود را انتخاب کنید">
                             <datalist id="ostan">
@@ -55,6 +55,12 @@
                                 <option>مشهد</option>
                                 <option>زنجان</option>
                             </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;"><label for="desc">توضیحات :</label></td>
+                        <td>
+                            <textarea style="width: 95%;height: 100px; resize: none;" placeholder="توضیحات خود را وارد نمایید"></textarea>
                         </td>
                     </tr>
                     <tr>
