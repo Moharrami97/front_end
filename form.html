@@ -2,54 +2,55 @@
     <head>
         <meta charset="UTF-8">
         <title>pinum</title>
+        <link href="style_form.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <form style="width: 50%; margin: 0 auto;">
-            <fieldset>
-                <legend>ثبت نام</legend>
-                <table style="width: 100%;">
+        <form id="form">
+            <fieldset style="border-radius: 10px;">
+                <legend style="font-size:large; font-weight: bold;">ثبت نام</legend>
+                <table id="table">
                     <tr>
-                        <td style="width: 30%;text-align: left;"><label for="name">نام :</label></td>
-                        <td style="width: 70%;"><input type="text" id="name"></td>
+                        <td class="label"><label for="name">نام :</label></td>
+                        <td style="width: 70%;"><input class="frame" type="text" id="name"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="family" >نام خانوادگی :</label></td>
-                        <td><input type="text" id="family"></td>
+                        <td class="label"><label for="family" >نام خانوادگی :</label></td>
+                        <td><input  class="frame" type="text" id="family"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="date" >تاریخ تولد :</label></td>
-                        <td><input type="date" id="date" name="date"></td>
+                        <td class="label"><label for="date" >تاریخ تولد :</label></td>
+                        <td><input  class="frame" type="date" id="date" name="date"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="newsletter" >عضویت در خبرنامه؟</label></td>
-                        <td><input type="checkbox" id="newsletter" name="news"></td>
+                        <td class="label"><label for="newsletter" >عضویت در کانال؟</label></td>
+                        <td><input  class="frame" type="checkbox" id="newsletter" name="news"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="gender" >جنسیت :</label></td>
+                        <td class="label"><label for="gender" >جنسیت :</label></td>
                         <td>
                             مرد
-                            <input type="radio" id="gender" name="gender">
+                            <input  class="frame" type="radio" id="gender" name="gender">
                             زن
-                            <input type="radio" id="gender" name="gender">
+                            <input  class="frame" type="radio" id="gender" name="gender">
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="score" >معدل :</label></td>
-                        <td>0<input type="range" id="score" min="0" max="20" name="score">20</td>
+                        <td class="label"><label for="score" >معدل :</label></td>
+                        <td>0<input  class="frame" type="range" id="score" min="0" max="20" name="score">20</td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="color" >رنگ مورد علاقه :</label></td>
-                        <td><input type="color" id="color" name="color"></td>
+                        <td class="label"><label for="color" >رنگ مورد علاقه :</label></td>
+                        <td><input  class="frame" type="color" id="color" name="color"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="email" >ایمیل :</label></td>
-                        <td><input type="email" id="email" name="email"></td>
+                        <td class="label"><label for="email" >ایمیل :</label></td>
+                        <td><input  class="frame" type="email" id="email" name="email"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="ostanha">استان :</label></td>
+                        <td class="label"><label for="states">استان :</label></td>
                         <td>
-                            <input list="ostan" id="ostanha" placeholder="استان خود را انتخاب کنید">
-                            <datalist id="ostan">
+                            <input  class="frame" list="state" id="states" placeholder="استان خود را انتخاب کنید">
+                            <datalist  class="frame" id="state">
                                 <option>تهران</option>
                                 <option>اصفهان</option>
                                 <option>مشهد</option>
@@ -58,14 +59,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><label for="desc">توضیحات :</label></td>
+                        <td class="label"><label for="desc">توضیحات :</label></td>
                         <td>
-                            <textarea style="width: 95%;height: 100px; resize: none;" placeholder="توضیحات خود را وارد نمایید"></textarea>
+                            <textarea  class="frame" id="textarea" placeholder="توضیحات خود را وارد نمایید"></textarea>
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;"><input type="submit" value="ثبت نام"></td>
-                        <td><input type="reset" id="submit" value="پاک کردن"></td>
+                        <td class="label"><input  class="frame" type="submit" value="ثبت نام"></td>
+                        <td><input  class="frame" type="reset" id="submit" value="پاک کردن"></td>
                     </tr>
                 </table>
             </fieldset>
