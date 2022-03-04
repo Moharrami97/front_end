@@ -1,0 +1,43 @@
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.my_table{
+    border: 1px solid #ccc;
+    width: 50%;
+    margin: 100px auto;
+    border-collapse: collapse;
+}
+
+.my_table td{
+    height: 30px;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.my_table th{
+    height: 50px;
+}
+
+.my_table tbody tr:hover{
+    background-color: #bbb;
+}
+
+.my_table thead{
+    background-color: black;
+    color: white;
+}
+
+.my_table tr:nth-child(2n){
+    background-color: #ddd;
+}
+
+.my_table tbody tr:last-child{
+    border-bottom: 5px solid black ;
+}
+
+.my_table td:nth-child(1) , .my_table td:nth-child(2){
+    text-align: right;
+}

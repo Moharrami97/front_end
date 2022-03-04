@@ -5,7 +5,7 @@ body{
 }
 
 #form{
-    width: 50%; 
+    width: 40%; 
     margin: 0 auto;
 }
 
@@ -23,6 +23,8 @@ body{
 .frame{
     background-color:rgb(252, 251, 197);
     padding: 5px;
+    border-color:darkgreen;
+    border-width: 1px;
 }
 
 .label{
