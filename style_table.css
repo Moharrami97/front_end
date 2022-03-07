@@ -37,7 +37,3 @@ body{
 .my_table tbody tr:last-child{
     border-bottom: 5px solid black ;
 }
-
-.my_table td:nth-child(1) , .my_table td:nth-child(2){
-    text-align: right;
-}
