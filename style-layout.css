@@ -76,6 +76,35 @@ main{
     float: left;
 }
 
+.slider-img{
+    width: 100%;
+    height: 450px;
+}
+
+.slider-img img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-btn{
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(245, 255, 102);
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.slider-btn li{
+    width: 100px;
+    float: left;
+    margin-right: 45px;
+    padding: 5px;
+    border: 1px dotted black;
+}
+
 .col-right{
     width: 30%;
     border: 1px solid #aaa;
@@ -86,8 +115,12 @@ main{
 
 .widget{
     width: 100%;
-    height: 100px;
     border: 1px solid #bbb;
+    margin-top:40px;
+}
+
+.widget:first-child{
+    margin-top: 30;
 }
 
 .widget-title{
@@ -98,10 +131,27 @@ main{
     border-bottom:  1px dotted #aaa;
 }
 
+.widget-content{
+    padding: 10px;
+}
+.form-element{
+    margin-top: 10px;
+}
+
+.vip-element{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-submit{
+    text-align: right;
+    padding-bottom: 10px;
+}
+
 footer{
     width: 100%;
     height: 100px;
-    background-color: rgb(240, 140, 9);
+    background-color: yellow;
 }
 
 .clear{
