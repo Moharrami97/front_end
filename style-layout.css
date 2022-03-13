@@ -43,6 +43,11 @@ header{
     text-align: center;
 }
 
+.logo img{
+    width:100px;
+    border-radius:50% ;
+}
+
 header nav{
     width: 80%;
     line-height: 30px;
@@ -218,7 +223,7 @@ main{
 }
 
 .review-item{
-    width: 100%;
+    width: 98%;
     border-bottom: 1px solid #bbb;
     padding: 5px;
 }
@@ -359,4 +364,63 @@ footer{
 
 .clear{
     clear: both;
+}
+
+
+@media all and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+    .col-left{
+        width: 100%;
+    }
+    .col-right{
+        display: none;
+    }
+
+    .nav-top{
+        margin-right: 150px;
+    }
+}
+
+@media all and (max-width:1088px){
+    header nav{
+        width: 100%;
+    }
+
+    nav>ul>li{
+        margin-right: 1px;
+        padding: 1px;
+        width: 90px;
+        font-size: smaller;
+    }
+}
+
+@media all and (max-width:992px){
+    .nav-top{
+        display: none;
+    }
+}
+
+@media all and (max-width:803px){
+    .rate img{
+        width: 15px;
+    }
+    
+}
+
+@media all and (max-width:655px){
+    .review-left-bottom{
+        font-size: smaller;
+    }
+}
+
+@media all and (max-width:637px){
+    .col-left-right{
+        display: none;
+    }
+
+    .col-left-left{
+        width: 100%;
+    }
 }
