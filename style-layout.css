@@ -55,16 +55,86 @@ ul{
     list-style-position: inside;
 }
 
-nav li{
-    width: 120px;
+nav>ul>li{
+    width: 130px;
     border: 1px dotted #aaa;
     margin-right: 7px;
     display: inline-block;
     text-align: center;
+    position: relative;
 }
 
 a{
     color:black;
+}
+
+nav>ul>li:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    width: 150px;
+    border: #aaa 1px solid;
+    background-color: #fff;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav>ul>li:hover .dropdown-content{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.dropdown-content>ul>li{
+    height: 40px;
+}
+
+.dropdown-content li:hover{
+    background-color: #888;
+}
+
+.dropdown2-content{
+    width: 150px;
+    border: #aaa 1px solid;
+    background-color: #fff;
+    position: absolute;
+    left: 150px;
+    top: 40px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-content li:hover .dropdown2-content{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.icon-top-to-bottom{
+    width: 10px;
+    position: absolute;
+    right: 3px;
+    top:10px;
+}
+
+.icon-left-to-right{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 165px;
+}
+
+nav>ul>li:hover .icon-top-to-bottom{
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+.dropdown-content li:hover .icon-left-to-right{
+    right: 5px;
+    transition: all 0.5s;
 }
 
 main{
