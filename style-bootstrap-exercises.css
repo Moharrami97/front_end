@@ -10,8 +10,19 @@
     width: 100%;
 }
 
-.col-8{
+.d{
     position: relative;
+}
+
+.d span:first-child{
+    float: left;
+    left: 0;
+    padding-top: 5px;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
 }
 
 .border{
@@ -80,16 +91,18 @@ ul{
 
 .offers li{
     margin-top: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 .offers li:hover{
     border: red 1.3px solid;
+    margin-top: 8.7px;
+    box-sizing:border-box;
+    border-radius: 7px;
 }
 
 .icon{
-    width: 50px;
-    font-weight: bold
+    padding: 5px;
 }
 
 .discont{
